@@ -102,9 +102,12 @@ export default function AddContentModal({
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="max-w-2xl bg-card border-border">
+      <DialogContent className="max-w-2xl bg-card border-border" aria-describedby="add-content-description">
         <DialogHeader>
           <DialogTitle className="text-foreground">Add New Content</DialogTitle>
+          <div id="add-content-description" className="sr-only">
+            Create new content for the Palestine news timeline including breaking news, analysis, quotes, and timeline events.
+          </div>
         </DialogHeader>
         
         <Form {...form}>

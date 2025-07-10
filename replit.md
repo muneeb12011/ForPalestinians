@@ -96,3 +96,44 @@ Preferred communication style: Simple, everyday language.
 - **Dark Theme**: Consistent dark theme throughout the application
 
 The application uses a modern tech stack optimized for real-time news delivery with a focus on user experience and content management capabilities.
+
+## VS Code Setup
+
+### Quick Start for VS Code
+1. **Install Dependencies**: `npm install`
+2. **Run Development Server**: `npm run dev`
+3. **Open Browser**: `http://localhost:5000`
+
+### Setup Script
+Run the automated setup script:
+```bash
+chmod +x setup-vscode.sh
+./setup-vscode.sh
+```
+
+### VS Code Extensions
+The project includes configuration for these recommended extensions:
+- Prettier - Code formatter
+- Tailwind CSS IntelliSense
+- Auto Rename Tag
+- Path Intellisense
+- ESLint
+
+### Configuration Files
+- `.vscode/settings.json`: TypeScript and formatting preferences
+- `.vscode/extensions.json`: Recommended extensions list
+- `.vscode/launch.json`: Debug configurations
+- `.env.example`: Environment variables template
+
+### Debugging
+Use F5 to debug with:
+- "Launch Palestine News App": Full app with debugger
+- "Debug Server": Server-only debugging
+
+### Common Commands
+- `npm run dev`: Start development server
+- `npm run build`: Build for production
+- `npm run type-check`: Check TypeScript types
+- `npx kill-port 5000`: Kill port 5000 if in use
+
+The application is now optimized for VS Code development with proper TypeScript support, debugging capabilities, and automated setup scripts.
